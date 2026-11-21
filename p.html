@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OU7 BANK - Transfers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <header class="topbar">
+            <a href="salom.html" class="back">←</a>
+            <div class="brand">OU7<span>BANK</span></div>
+        </header>
+
+        <h1 class="page-title">Pul o'tkazish</h1>
+        <p class="muted">Kerakli xizmat turini tanlang.</p>
+
+        <div class="transfer-list">
+
+            <a href="#karta" class="transfer-item">
+                <div class="service-icon">💳</div>
+                <div>
+                    <h3>Kartadan kartaga</h3>
+                    <p>Boshqa kartaga demo o'tkazma</p>
+                </div>
+                <span>→</span>
+            </a>
+
+            <a href="#telefon" class="transfer-item">
+                <div class="service-icon">☎</div>
+                <div>
+                    <h3>Telefon raqamga</h3>
+                    <p>Mobil aloqa uchun</p>
+                </div>
+                <span>→</span>
+            </a>
+
+            <a href="#kommunal" class="transfer-item">
+                <div class="service-icon">▤</div>
+                <div>
+                    <h3>Kommunal to'lovlar</h3>
+                    <p>Elektr, gaz va suv</p>
+                </div>
+                <span>→</span>
+            </a>
+
+        </div>
+
+        <div class="transfer-form" id="karta">
+            <h2>Karta o'tkazmasi</h2>
+            <label>Demo karta raqami</label>
+            <input type="text" placeholder="0000 0000 0000 0000">
+
+            <label>Summa</label>
+            <input type="text" placeholder="100 000 UZS">
+
+            <button type="button">Demo o'tkazma</button>
+        </div>
+
+        <div class="transfer-form" id="telefon">
+            <h2>Telefon to'lovi</h2>
+            <label>Telefon raqam</label>
+            <input type="tel" placeholder="+998 00 000 00 00">
+
+            <label>Summa</label>
+            <input type="text" placeholder="50 000 UZS">
+
+            <button type="button">Demo to'lov</button>
+        </div>
+
+        <div class="transfer-form" id="kommunal">
+            <h2>Kommunal to'lov</h2>
+            <label>Xizmat turi</label>
+            <select>
+                <option>Elektr energiyasi</option>
+                <option>Tabiiy gaz</option>
+                <option>Suv ta'minoti</option>
+            </select>
+
+            <label>Shaxsiy hisob raqami</label>
+            <input type="text" placeholder="Demo hisob raqami">
+
+            <button type="button">Demo to'lov</button>
+        </div>
+
+        <nav class="bottom-menu">
+            <a href="3saxifa.salom.html">⌂<span>Asosiy</span></a>
+            <a href="4saxifa.p.html" class="active">⇄<span>O'tkazma</span></a>
+            <a href="5saxifa.o.html#tarix">◷<span>Tarix</span></a>
+            <a href="5saxifa.o.html#profil">♙<span>Profil</span></a>
+        </nav>
+
+    </div>
+
+</body>
+</html>

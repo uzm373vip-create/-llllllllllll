@@ -1,0 +1,525 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f4fa;
+    font-family: Arial, sans-serif;
+    color: #14213d;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.register-page {
+    min-height: 100vh;
+    padding: 40px 15px;
+    background:
+        radial-gradient(circle at top right, #c9dfff, transparent 40%),
+        #f1f4fa;
+}
+
+.brand {
+    font-size: 27px;
+    font-weight: 900;
+    color: #1255d8;
+}
+
+.brand span {
+    color: #14213d;
+}
+
+.register-page > .brand {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.register-card {
+    max-width: 440px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px #14213d12;
+}
+
+.step {
+    color: #1255d8;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.register-card h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.muted {
+    color: #8791a5;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 18px 0 9px;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e6f0;
+    border-radius: 12px;
+    outline: none;
+    background: #f8faff;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    border-color: #1255d8;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 23px;
+    border: none;
+    border-radius: 12px;
+    background: #1255d8;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #083fae;
+}
+
+.demo-note {
+    font-size: 11px;
+    color: #8490a5;
+    margin-top: 12px;
+}
+
+.secure {
+    text-align: center;
+    color: #9ca7b8;
+    font-size: 11px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+/* BANK CARD */
+
+.bank-card {
+    background: linear-gradient(135deg, #092b75, #1266ed, #40a5ff);
+    color: white;
+    padding: 25px;
+    border-radius: 22px;
+    margin: 25px 0;
+    box-shadow: 0 15px 30px #1255d844;
+}
+
+.card-head, .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-head span {
+    background: #ffffff30;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.chip {
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+.bank-card h2 {
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin: 25px 0;
+}
+
+.card-bottom {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.number-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.number-row h2 {
+    font-size: 15px;
+}
+
+.number-row a {
+    font-size: 11px;
+    background: #ffffff30;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* MAIN APP */
+
+.app {
+    max-width: 500px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 25px 20px 100px;
+    background: #f7f9fd;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.profile-icon, .avatar {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dce9ff;
+    color: #1255d8;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.welcome p {
+    color: #8791a5;
+    margin-bottom: 8px;
+}
+
+.welcome h1 {
+    font-size: 24px;
+}
+
+.balance {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px #14213d08;
+}
+
+.balance p {
+    color: #8791a5;
+    margin-bottom: 12px;
+}
+
+.balance h1 {
+    color: #1255d8;
+    font-size: 27px;
+}
+
+.balance small {
+    font-size: 12px;
+}
+
+.balance span {
+    display: block;
+    color: #8791a5;
+    font-size: 11px;
+    margin-top: 12px;
+}
+
+.section-title, .page-title {
+    font-size: 23px;
+    margin: 30px 0 20px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.services a {
+    background: white;
+    border-radius: 16px;
+    padding: 18px 8px;
+    text-align: center;
+}
+
+.service-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7efff;
+    color: #1255d8;
+    border-radius: 14px;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.services .service-icon {
+    margin: 0 auto 12px;
+}
+
+.services p {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* CARD INFO */
+
+.card-info {
+    background: white;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 16px;
+    line-height: 2;
+    font-size: 13px;
+}
+
+/* TRANSFERS */
+
+.back {
+    font-size: 24px;
+    color: #1255d8;
+}
+
+.transfer-list {
+    display: grid;
+    gap: 14px;
+}
+
+.transfer-item {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 17px;
+}
+
+.transfer-item .service-icon {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.transfer-item h3 {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.transfer-item p {
+    font-size: 11px;
+    color: #8791a5;
+}
+
+.transfer-item > span {
+    margin-left: auto;
+    color: #1255d8;
+}
+
+.transfer-form {
+    background: white;
+    padding: 22px;
+    margin-top: 22px;
+    border-radius: 18px;
+}
+
+.transfer-form h2 {
+    font-size: 18px;
+}
+
+/* HISTORY */
+
+.history-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+}
+
+.history-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background: #e7efff;
+    color: #1255d8;
+    border-radius: 12px;
+}
+
+.history-text {
+    flex: 1;
+}
+
+.history-text h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.history-text p, .history-text small {
+    font-size: 10px;
+    color: #8791a5;
+}
+
+.income, .expense {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.income {
+    color: #159b65;
+}
+
+.expense {
+    color: #e34d63;
+}
+
+/* PROFILE */
+
+.profile-section {
+    margin-top: 40px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.user-box h2 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.user-box p {
+    color: #8791a5;
+    font-size: 12px;
+}
+
+.settings {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 17px;
+}
+
+.settings h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.setting-link {
+    display: block;
+    padding: 12px 0;
+    font-size: 13px;
+    border-top: 1px solid #edf0f5;
+}
+
+.theme-demo {
+    padding: 20px;
+    margin-top: 12px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.dark-theme {
+    background: #111b35;
+    color: white;
+}
+
+.light-theme {
+    background: white;
+    color: #14213d;
+}
+
+.logout {
+    display: block;
+    text-align: center;
+    background: #fff0f1;
+    color: #df4354;
+    padding: 16px;
+    border-radius: 13px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* BOTTOM MENU */
+
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 13px 5px;
+    box-shadow: 0 -5px 25px #14213d0c;
+    border-radius: 18px 18px 0 0;
+    z-index: 10;
+}
+
+.bottom-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #9aa4b5;
+    font-size: 20px;
+}
+
+.bottom-menu span {
+    font-size: 10px;
+}
+
+.bottom-menu .active {
+    color: #1255d8;
+    font-weight: bold;
+}
+
+/* PHONE */
+
+@media (max-width: 400px) {
+    .register-card {
+        padding: 23px;
+    }
+
+    .app {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .balance h1 {
+        font-size: 23px;
+    }
+
+    .history-item {
+        gap: 8px;
+        padding: 12px;
+    }
+}
